@@ -10,6 +10,7 @@ Drop fruits into the container and match pairs to combine them into bigger fruit
 
 ## How to Play
 
+- Move around with WASD
 - Click to drop a fruit into the container
 - When two of the same fruit collide, they merge into the next fruit
 - Game over when fruits go above the container
