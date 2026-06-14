@@ -28,7 +28,7 @@ Drop fruits, merge matching pairs, and grow them all the way up to a watermelon 
 
 | Action | Control |
 | --- | --- |
-| Move the dropper | **A / D** |
+| Move the dropper | **A / D** or **← / →** |
 | Drop a fruit | **Left click** |
 | Goal | Merge two of the same fruit to evolve it into the next one |
 | Game over | A fruit settles above the top of the container |

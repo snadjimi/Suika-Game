@@ -17,14 +17,14 @@ public class CloudMovement : MonoBehaviour
 
     void Update()
     {
-        // checks to see if the user has presseed "A."
-        if (Input.GetKey(KeyCode.A))
+        // checks to see if the user has pressed "A" or the left arrow key.
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             // moves the cloud left at the speed that I want(5 in this case).
             Cloudy.transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
-        // checks to see if the user has pressed "D."
-        if (Input.GetKey(KeyCode.D))
+        // checks to see if the user has pressed "D" or the right arrow key.
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             // moves the cloud to the right.
             Cloudy.transform.Translate(Vector3.right * speed * Time.deltaTime);
