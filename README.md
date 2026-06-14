@@ -2,7 +2,7 @@
 
 <img src="images/banner.png" alt="Suika Game" width="620" />
 
-# 🍉 Suika Game
+# Suika Game
 
 A recreation of the classic **Suika (Watermelon) Game**, built in Unity and playable right in your browser.
 Drop fruits, merge matching pairs, and grow them all the way up to a watermelon — without overflowing the box!
@@ -18,13 +18,13 @@ Drop fruits, merge matching pairs, and grow them all the way up to a watermelon 
 
 ---
 
-## 📸 Gameplay
+## Gameplay
 
 <div align="center">
 <img src="images/gameplay.png" alt="Suika Game in action" width="720" />
 </div>
 
-## 🎮 How to Play
+## How to Play
 
 | Action | Control |
 | --- | --- |
@@ -33,9 +33,9 @@ Drop fruits, merge matching pairs, and grow them all the way up to a watermelon 
 | Goal | Merge two of the same fruit to evolve it into the next one |
 | Game over | A fruit settles above the top of the container |
 
-> 💡 You can only drop one fruit at a time — the next drop unlocks once the last fruit has landed.
+> You can only drop one fruit at a time — the next drop unlocks once the last fruit has landed.
 
-## 🍒 Fruit Evolution Chain
+## Fruit Evolution Chain
 
 Match two identical fruits and they merge into the next one up the chain:
 
@@ -53,25 +53,19 @@ Match two identical fruits and they merge into the next one up the chain:
 <img src="images/fruits/10-melon.png" width="46" title="Melon" /> ➜
 <img src="images/fruits/11-watermelon.png" width="56" title="Watermelon" />
 
-**Cherry → Strawberry → Grapes → Dekopon → Orange → Apple → Pear → Peach → Pineapple → Melon → 🍉 Watermelon**
+**Cherry → Strawberry → Grapes → Dekopon → Orange → Apple → Pear → Peach → Pineapple → Melon → Watermelon**
 
 </div>
 
-## 🛠️ Built With
+## Built With
 
 - **Unity** (2022.3) — game engine & 2D physics
 - **C#** — gameplay scripting
 - **WebGL** — browser build target
 - **GitHub Pages** — hosting
 
-## 🚀 Run It Yourself
+## Run It Yourself
 
 1. Open the project in Unity (2022.3 or newer).
 2. Open the `SampleScene` scene.
 3. Press **Play** in the editor, or build for **WebGL** via *File → Build Settings*.
-
----
-
-<div align="center">
-<sub>Made with 🍉 by <a href="https://github.com/snadjimi">Soren Nadjimi</a></sub>
-</div>
