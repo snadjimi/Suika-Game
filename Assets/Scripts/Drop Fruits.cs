@@ -32,8 +32,10 @@ public class DropFruits : MonoBehaviour
     private GameObject[] fruitPreviews;
     // the current fruit that is being previewed.
     private GameObject currentPreview;
-    // holds a number that will determine the index of the next fruit to be dropped. 
-    private int nextFruitIndex = 0; 
+    // holds a number that will determine the index of the next fruit to be dropped.
+    private int nextFruitIndex = 0;
+    private Rigidbody2D lastDroppedRb = null;
+    private bool canDrop = true;
 
     void Start()
     {
@@ -50,16 +52,19 @@ public class DropFruits : MonoBehaviour
     {
         // The if statement will make sure that the mouse button has been clicked and the start/end screen is not
         // active before allowing the user to drop fruit.
-        if (Input.GetMouseButtonDown(0) && !gameOverCanvas.activeInHierarchy)
+        // Allow dropping once the last fruit has come to rest.
+        if (lastDroppedRb != null && lastDroppedRb.IsSleeping())
         {
-           
-            // Drops the next fruit using the index as an argument.
-            DropRandomFruit(nextFruitIndex);
-            // Adds to the score.
-            ScoreManager.Instance.AddScore(1); 
+            canDrop = true;
+            lastDroppedRb = null;
+        }
 
-            PrepareNextFruit(); 
-            
+        if (Input.GetMouseButtonDown(0) && !gameOverCanvas.activeInHierarchy && canDrop)
+        {
+            DropRandomFruit(nextFruitIndex);
+            ScoreManager.Instance.AddScore(1);
+            PrepareNextFruit();
+            canDrop = false;
         }
     }
 
@@ -77,6 +82,7 @@ public class DropFruits : MonoBehaviour
         if (rb != null)
         {
             rb.gravityScale = 1;
+            lastDroppedRb = rb;
         }
 
         // If there is currently a preview, it will be destroyed by the program.
