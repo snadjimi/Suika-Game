@@ -102,6 +102,3 @@ InitTestScene*.unity*
 
 # macOS system files
 .DS_Store
-
-# WebGL build output
-WebGL-Build/
